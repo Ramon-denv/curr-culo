@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .right-column {
+            width: 70%;
+            padding-left: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.2em;
+            text-align: left;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .skills-graph {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .skill-item {
+            text-align: center;
+        }
+        .skill-item svg {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .skill-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #777;
+        }
+        /* Estilo do gráfico */
+        .circle-bg {
+            fill: none;
+            stroke: #ddd;
+            stroke-width: 10;
+        }
+        .circle-fg-advanced {
+            fill: none;
+            stroke: #0056b3;
+            stroke-width: 10;
+            stroke-dasharray: 251;
+            stroke-dashoffset: 0;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .circle-fg-intermediate {
+            fill: none;
+            stroke: #ffa500;
+            stroke-width: 10;
+            stroke-dasharray: 251;
+            stroke-dashoffset: 60;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .circle-fg-beginner {
+            fill: none;
+            stroke: #32cd32;
+            stroke-width: 10;
+            stroke-dasharray: 251;
+            stroke-dashoffset: 150;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Coluna Esquerda: Foto e Informações Pessoais -->
+        <div class="left-column">
+            <!-- Foto de Perfil -->
+            <div class="profile-pic">
+                <img src="imagem.jpg" alt="Foto de Ramon Mendes Peixoto">
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="contact-info">
+                <h2>Informações de Contato</h2>
+                <p>Email: <a href="mailto:ramonmendespeixoto008@gmail.com">ramonmendespeixoto008@gmail.com</a></p>
+                <p>Telefone: (31) 99519-9495</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/ramon-denv" target="_blank">www.linkedin.com/in/ramon-denv</a></p>
+                <p>GitHub: <a href="https://github.com/Ramon-denv" target="_blank">github.com/Ramon-denv</a></p>
+            </div>
+        </div>
+
+        <!-- Coluna Direita: Conteúdo Principal -->
+        <div class="right-column">
+            <!-- Nome e Título -->
+            <h1>RAMON MENDES PEIXOTO</h1>
+            <p>Full Stack Developer | Java | C# | .NET MVC | .NET Framework | .NET Core | React.js | Next.js | SQL Server</p>
+
+            <!-- Objetivo Profissional -->
+            <div class="section">
+                <h2>Objetivo Profissional</h2>
+                <p>Desenvolvedor Full Stack apaixonado por criar soluções web modernas e interativas. Possuo habilidades em desenvolvimento de interfaces atraentes e na implementação de lógicas robustas no backend. Estou em busca de oportunidades desafiadoras onde possa aplicar minhas competências em projetos inovadores e contribuir para o sucesso da equipe.</p>
+            </div>
+
+            <!-- Gráfico de Habilidades -->
+            <div class="section">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-graph">
+                    <!-- PHP (Intermediário) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-intermediate" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>PHP - Intermediário</p>
+                    </div>
+                    <!-- C# (Intermediário) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>C# - Médio</p>
+                    </div>
+                    <!-- Java (Médio) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>Java - Médio</p>
+                    </div>
+                    <!-- React.js (Intermediário) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>React.js - Médio</p>
+                    </div>
+                </div>
+                <div class="skills-graph">
+                     <!-- Kotlin (Intermediário) -->
+                     <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>Kotlin - Médio</p>
+                    </div>
+                    <!-- Next.js (Intermediário) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>Next.js - Médio</p>
+                    </div>
+                    <!-- SQL Server (Intermediário) -->
+                    <div class="skill-item">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40" />
+                            <circle class="circle-fg-beginner" cx="50" cy="50" r="40" />
+                        </svg>
+                        <p>SQL Server - Médio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiência Profissional -->
+            <div class="section">
+                <h2>Experiência Profissional</h2>
+                <p><strong>Estágio - Analista de sistema | Prodemge</strong> - dez 2023 - Presente<br>
+                Desenvolvimento de interfaces de usuário, responsividade e Colaboração em projetos de frontend utilizando JavaScript, HTML5, CSS3 e PHP criando experiências interativas para o usuário.</p>
+        
+                <p><strong>Auxiliar de informatica | PUC Minas</strong> - Jun 2020 - Dez 2021<br>
+                 Suporte ao cliente</p>
+            </div>
+        
+            <!-- Educação -->
+            <div class="section">
+                <h2>Educação</h2>
+                <p><strong>Bacharelado em Engenharia de Software | PUC Minas</strong> - 2022 - 2026<br>
+                Formação em desenvolvimento de software, com foco em tecnologias web e algoritmos.</p>
+            </div>
+
+            <div class="section">
+                <h2>Disciplinas em Destaque</h2>
+                    <P><strong>Teste de Software:</strong> Aprendizado sobre testes unitários e integração, desenvolvendo habilidades em garantir a qualidade do software e a detecção precoce de falhas.</P>
+                    <p><strong>Arquitetura de Software:</strong> Estudo de padrões e práticas de design de software, preparando-me para desenvolver sistemas escaláveis e manuteníveis.</p>
+                    <P><strong>Algoritmos e Estruturas de Dados (AED):</strong> Compreensão profunda de algoritmos e suas complexidades, contribuindo para a eficiência de soluções em desenvolvimento de software.</P>
+                    <P><strong>Laboratórios de Desenvolvimento:</strong> Aulas práticas que proporcionaram experiência no desenvolvimento de projetos, incentivando a aplicação de teoria em situações reais e fortalecendo habilidades práticas.</P>
+                    <P><strong>Engenharia de Software:</strong> Estudo das metodologias de desenvolvimento ágil e tradicional, preparando-me para gerenciar projetos de software de forma eficiente.</P>
+                    <P><strong>Desenvolvimento Web:</strong> Habilidades em criação de aplicações web utilizando tecnologias modernas, incluindo HTML, CSS, JavaScript e frameworks.</P>
+            </div>
+            
+
+            <div class="section">
+                <h2>Projetos Acadêmicos em Destaque</h2>
+            
+                <div class="project">
+                    <h3>Clínica Veterinária</h3>
+                    <p><strong>Descrição:</strong> Desenvolvimento de um sistema para agendamento de castrações de animais pela prefeitura de Ouro Branco, focando na facilidade de uso via WhatsApp. O projeto inclui a gestão de até 3 animais por pessoa, restrições de peso para castração, integração com clínicas veterinárias e automação de processos.</p>
+                    <p><strong>Destaques:</strong> Sistema responsivo, múltiplos perfis de usuário (administrador, veterinário, usuário final), e funcionalidades como gestão de agendas e acesso a prontuários.</p>
+                </div>
+            
+                <div class="project">
+                    <h3>Trama Junior</h3>
+                    <p><strong>Descrição:</strong> Projeto de gamificação para transformar a experiência de estudantes envolvidos em atividades de extensão e voluntariado, incentivando o comprometimento com recompensas e reconhecimento. O sistema de pontos e a integração na plataforma interna tornaram as atividades mais interativas.</p>
+                    <p><strong>Destaques:</strong> Criação de níveis de colaboradores, sistema de penalidades e incentivo ao cumprimento de metas, promovendo engajamento contínuo.</p>
+                </div>
+            </div>
+            
+
+            <!-- Experiência Profissional -->
+            <div class="section">
+                <h2>Certificações </h2>
+                <p><strong>Gestão Empresarial com Software ERP | IOS</strong> - dez 2023 - Presente<br>
+                    Word, Excel e PowerPoint;
+                    Administração de Compras;
+                    Controle de Estoque;
+                    Faturamento e Vendas;
+                    Administração Financeira;
+                    Comunicação e Expressão;
+                    Cálculo Matemático
+                    Soft Skills;
+                    TCC.</p>
+        
+                    <p><strong><a href="certificados/C8VJU7B2.pdf" target="_blank">XP Inc. - Full Stack Developer | DIO</a></strong><br>Competências: Desenvolvimento Full Stack, JavaScript, React, Node.js, APIs</p>
+
+                    <p><strong><a href="certificados/PFRSHUDO.pdf" target="_blank">Avanade - .NET Developer | DIO</a></strong><br>Competências: Desenvolvimento de software</p>
+                    
+                    <p><strong><a href="certificados/C8VJU7B2.pdf" target="_blank">Engenharia de Prompts na AWS com Claude | DIO</a></strong><br>Competências: AWS, Inteligência Artificial</p>
+                    
+                    <p><strong><a href="certificados/JRL8WWNT.pdf" target="_blank">Microsoft Copilot AI | DIO</a></strong><br>Competências: AI, Automação com Microsoft Copilot</p>
+                    
+                    <p><strong><a href="certificados/XSGK2VRH.pdf" target="_blank">Arquitetura com Spring Boot e Cloud | DIO</a></strong><br>Competências: Spring Boot, Cloud</p>
+                    
+                    <p><strong><a href="certificados/3EWKYU11.pdf" target="_blank">Desenvolvimento Java com IA | DIO</a></strong><br>Competências: Java, Inteligência Artificial</p>
+                    
+                    <p><strong><a href="certificados/SZCAQZBB.pdf" target="_blank">Desenvolvimento Java com Cloud AWS | DIO</a></strong><br>Competências: Java, AWS, Cloud</p>
+                    
+                    <p><strong><a href="certificados/TP6ZEP1Y.pdf" target="_blank">NTT DATA - Engenharia de Dados com Python | DIO</a></strong><br>Competências: Python, MySQL, Engenharia de Dados</p>
+                    
+                    <p><strong><a href="certificados/YXBDTLEE.pdf" target="_blank">Spring Boot e Angular | DIO</a></strong><br>Competências: Spring Boot, Angular</p>
+                                        
+
+            </div>
+            
+        
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 - Todos os direitos reservados por Ramon Mendes Peixoto.</p>
+    </div>
+</body>
+</html>
